@@ -83,9 +83,9 @@
         func_layer {
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-                &kp F11 &kp F12 &trans &trans &trans &trans &trans &trans &trans &trans
+                &kp F11 &kp F12 &trans &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END &kp DQT
                 &trans &trans &trans &trans &trans &trans &trans &cp M_VOLD &cp M_VOLU &trans
-                &trans &reset &bootloader
+                &trans &trans &trans
             >;
         };
 
@@ -94,7 +94,7 @@
                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &bt BT_CLR &trans &trans &trans &trans &bt BT_PRV &bt BT_NXT &trans
-                &trans &reset &trans
+                &bootloader &reset &trans
             >;
         };
     };

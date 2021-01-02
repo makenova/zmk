@@ -24,34 +24,29 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+    }
 
+    combos {
+        compatible = "zmk,combo";
         combo_ent {
-            compatible = "zmk,behavior-combo";
-            label = "COMBO_ENT";
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp RET>;
         };
 
         combo_bksp {
-            compatible = "zmk,behavior-combo";
-            label = "COMBO_BKSP";
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
         };
 
         combo_tab {
-            compatible = "zmk,behavior-combo";
-            label = "COMBO_TAB";
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp TAB>;
         };
 
         combo_del {
-            compatible = "zmk,behavior-combo";
-            label = "COMBO_DEL";
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp DEL>;
